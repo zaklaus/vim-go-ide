@@ -29,6 +29,7 @@ command W w !sudo tee % > /dev/null
 " This is totally awesome - remap jj to escape in insert mode.  You'll never type jj anyway, so it's great!
 inoremap jj <esc>
 nnoremap JJJJ <nop>
+nnoremap <CR> :noh<CR><CR>
 
 "------------------------------------------------------------------------------
 " VIM user interface
@@ -301,7 +302,7 @@ set viminfo^=%
 set laststatus=2
 
 " Format the status line
-" set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
+set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
 
 
 "------------------------------------------------------------------------------
